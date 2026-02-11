@@ -3,7 +3,6 @@ import requests
 import json
 import time
 from datetime import datetime
-from API.api_fast import *
 
 # API Configuration - Azure Live API
 API_BASE_URL = "https://dataplatformapp-grasim-abg-webapp-000-ccdqaudxemf9beej.centralindia-01.azurewebsites.net"
@@ -314,3 +313,4 @@ if st.button("Submit Query"):
             st.error("❌ Could not connect to Azure API. Please check your internet connection.")
         except Exception as e:
             st.error(f"❌ Error: {str(e)}")
+
